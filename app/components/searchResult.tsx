@@ -5,7 +5,7 @@ function SearchResult() {
   return (
     <div className="min-h-screen bg-gray-100 py-10">
       <h1 className="text-center text-3xl font-bold mb-8">
-        Demo Hotel Search Results
+        Demo Recent Search
       </h1>
       <div className="container mx-auto px-4 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
         {/* Hotel Card 1 */}
