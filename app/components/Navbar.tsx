@@ -7,10 +7,10 @@ import Image from 'next/image';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const [activeTab, setActiveTab] = useState("/"); // Default to Home
+  const [activeTab, setActiveTab] = useState<string>("/"); // Default to Home
 
-  // Function to handle active tab change
-  const handleTabClick = (tab) => {
+  // Function to handle active tab change with type definition
+  const handleTabClick = (tab: string) => {
     setActiveTab(tab);
   };
 

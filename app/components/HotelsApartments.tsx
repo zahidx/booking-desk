@@ -143,7 +143,6 @@ const HotelsApartments: React.FC = () => {
           </div>
         </div>
       )}
-
 <SearchResult/>
     </div>
   );

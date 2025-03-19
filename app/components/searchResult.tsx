@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from 'next/image';
 
 function SearchResult() {
   return (
@@ -9,10 +10,12 @@ function SearchResult() {
       <div className="container mx-auto px-4 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
         {/* Hotel Card 1 */}
         <div className="bg-white border border-gray-200 rounded-lg shadow hover:shadow-lg transition-transform duration-200 transform hover:-translate-y-1 flex">
-        <div className="flex items-center justify-center w-24 h-24  mt-4 pl-2">
-            <img 
+          <div className="flex items-center justify-center w-24 h-24 mt-4 pl-2">
+            <Image 
               src="/images/hotel.png" 
               alt="Hotel" 
+              width={96} // Set the desired width
+              height={96} // Set the desired height
               className="object-cover rounded-l-lg"
             />
           </div>
@@ -24,10 +27,12 @@ function SearchResult() {
         </div>
         {/* Hotel Card 2 */}
         <div className="bg-white border border-gray-200 rounded-lg shadow hover:shadow-lg transition-transform duration-200 transform hover:-translate-y-1 flex">
-          <div className="flex items-center justify-center w-24 h-24  mt-4 pl-2">
-            <img 
+          <div className="flex items-center justify-center w-24 h-24 mt-4 pl-2">
+            <Image 
               src="/images/hotel.png" 
               alt="Hotel" 
+              width={96}
+              height={96}
               className="object-cover rounded-l-lg"
             />
           </div>
@@ -39,10 +44,12 @@ function SearchResult() {
         </div>
         {/* Hotel Card 3 */}
         <div className="bg-white border border-gray-200 rounded-lg shadow hover:shadow-lg transition-transform duration-200 transform hover:-translate-y-1 flex">
-        <div className="flex items-center justify-center w-24 h-24  mt-4 pl-2">
-            <img 
+          <div className="flex items-center justify-center w-24 h-24 mt-4 pl-2">
+            <Image 
               src="/images/hotel.png" 
               alt="Hotel" 
+              width={96}
+              height={96}
               className="object-cover rounded-l-lg"
             />
           </div>
