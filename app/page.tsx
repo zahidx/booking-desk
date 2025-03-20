@@ -1,13 +1,13 @@
 'use client';
 
 import { useState, lazy, Suspense } from 'react';
-import { 
-  FaMapMarkerAlt, 
-  FaCalendarAlt, 
-  FaPlaneDeparture, 
-  FaPlaneArrival, 
-  FaTrain, 
-  FaCar 
+import {
+  FaMapMarkerAlt,
+  FaCalendarAlt,
+  FaPlaneDeparture,
+  FaPlaneArrival,
+  FaTrain,
+  FaCar
 } from 'react-icons/fa';
 
 const HotelsApartments = lazy(() => import('./components/HotelsApartments'));
@@ -96,28 +96,26 @@ const Home: React.FC = () => {
       <div className="relative mt-10 mx-auto bg-white p-6 rounded-t-lg w-11/12 md:w-2/3 z-60">
         {/* Mobile dropdown */}
         {/* Mobile dropdown */}
-<div className="block md:hidden mb-4">
-  <div className="relative">
-    <select
-      value={activeTab}
-      onChange={(e) => setActiveTab(e.target.value)}
-      className="appearance-none w-full p-3 pr-10 border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-indigo-200 focus:border-indigo-500 transition-colors"
-    >
-      {tabs.map((item) => (
-        <option key={item} value={item}>
-          {item}
-        </option>
-      ))}
-    </select>
-    <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-500">
-      <svg className="fill-current h-4 w-4" viewBox="0 0 20 20">
-        <path d="M7 7l3-3 3 3m0 6l-3 3-3-3" />
-      </svg>
-    </div>
-  </div>
-</div>
-
-
+        <div className="block md:hidden mb-4">
+          <div className="relative">
+            <select
+              value={activeTab}
+              onChange={(e) => setActiveTab(e.target.value)}
+              className="appearance-none w-full p-3 pr-10 border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-indigo-200 focus:border-indigo-500 transition-colors"
+            >
+              {tabs.map((item) => (
+                <option key={item} value={item}>
+                  {item}
+                </option>
+              ))}
+            </select>
+            <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-500">
+              <svg className="fill-current h-4 w-4" viewBox="0 0 20 20">
+                <path d="M7 7l3-3 3 3m0 6l-3 3-3-3" />
+              </svg>
+            </div>
+          </div>
+        </div>
         {/* Desktop tabs */}
         <nav className="hidden md:flex border-b pb-3 gap-6 text-gray-700 ">
           {tabs.map((item) => (
